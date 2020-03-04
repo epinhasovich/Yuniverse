@@ -1,0 +1,356 @@
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Open+Sans&display=swap" rel="stylesheet">
+
+    <title>🧘 Yuniverse</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            background-image: url("https://www.cbdoil.org/wp-content/uploads/2019/03/cbd-oil-for-cancer.jpg");
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #navbar {
+            display: flex;
+        }
+
+        #name {
+            color: yellow;
+            font-family: 'Bubblegum Sans';
+            font-size: 60px;
+            margin-left: 5%;
+        }
+
+        #menu {
+            font-size: 16px;
+            margin-top: 6%;
+            display: flex;
+            margin-left: 200%;
+        }
+
+        .choices {
+            margin-right: 25%;
+            font-family: 'Open Sans';
+        }
+
+        .choices:hover {
+            color: yellow;
+            cursor: pointer;
+        }
+
+        #shopping {
+            height: 20px;
+        }
+
+        #cta {
+            font-family: 'Open Sans';
+            height: 50%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 15%;
+            margin-left: -15%;
+        }
+
+        #header {
+            font-size: 20px;
+        }
+
+        #message {
+            font-size: 38px;
+            margin-top: -7%;
+        }
+
+        #shop {
+            width: 50%;
+            height: 12%;
+            border-radius: 25px;
+            border: 1px solid yellow;
+            background-color: black;
+            color: yellow;
+            font-size: 20px;
+        }
+
+        #shop:hover {
+            opacity: .5;
+            cursor: pointer;
+        }
+
+        #container_about {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #choices:link {
+            text-decoration: none;
+        }
+
+        #choices:visited {
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: yellow;
+        }
+
+        #image_one,
+        #about {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #cups {
+            height: 350px;
+            width: 500px;
+        }
+
+        #description {
+            font-family: 'Open Sans';
+            width: 550px;
+            font-size: 20px;
+        }
+
+        #container_products {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container_contact {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Open Sans';
+        }
+
+        #newsletter {
+            height: 50vh;
+            width: 100vw;
+            background: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: row;
+            height: 50vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+        }
+
+        #info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 33vw;
+            align-items: center;
+        }
+
+        #links {
+            width: 33vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #social {
+            width: 33vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #spam {
+            color: lightslategray;
+            font-size: 16px;
+        }
+
+        #subscribe {
+            font-size: 24px;
+        }
+
+        #label {
+            font-size: 36px;
+        }
+
+        input {
+            height: 5vh;
+            width: 35vw;
+        }
+
+        #submit {
+            width: 8vw;
+            height: 5vh;
+            color: yellow;
+            background-color: black;
+            border-radius: 15px;
+            border: 1px solid yellow;
+        }
+
+        #submit:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .terms {
+            margin-bottom: 2%;
+        }
+
+        .terms:hover {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .terms:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        #socialIcon {
+            height: 50px;
+            width: 50px;
+            margin-right: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="navbar">
+            <div id="logo">
+                <span id="name">Yuniverse</span>
+            </div>
+            <div id="menu">
+                <span id="aboutChoice" class="choices"><a href="#container_about">About</a></span>
+                <span id="productsChoice" class="choices"><a href="#container_products"></a>Products</span>
+                <span id="contactChoice" class="choices"><a href="#container_contact"></a>Contact</span>
+                <span class="choices"><img id="shopping" src="./images/cart.png"></span>
+            </div>
+        </div>
+        <div id="cta">
+            <p id="header">CBD + WELLNESS</p>
+            <p id="message">Live your best with what the Yuniverse has to offer.</p>
+            <button id="shop">Shop Now</button>
+        </div>
+    </div>
+
+    <div id="container_about">
+        <div id="image_one">
+            <img id="cups" src="./images/drinks.jpg">
+        </div>
+
+        <div id="about">
+            <p id="description">In late 2018, in Phoenix, Arizona, the idea of a place where people could not only
+                experience flavorful
+                fresh specialty coffee and tea, but also practice holistic methods to bring euphoria and balance to
+                their daily life came about. With the core belief, a synthesis of community, holistic practices, and
+                CBD, will unlock a higher vibration, The Yuniverse was born. </p>
+        </div>
+
+
+
+    </div>
+    <div id="container_products">
+        PRODUCTS GO HERE
+
+    </div>
+
+    <div id="container_contact">
+        <div id="newsletter">
+            <span id="label">Join the Newsletter</span>
+            <span id="subscribe">Subscribe to get info on our new products or updates</span>
+            <span id="spam">No spam ever. Unsuscribe at any time.</span>
+            <form id="join">
+                <input placeholder="Email Address" type="email">
+                <button id="submit" type="submit">Join Now</button>
+            </form>
+        </div>
+
+        <div id="footer">
+            <div id="info">
+                <span><img src="./images/zen.png"></span>
+                <span>© 2020, The Yuniverse</span>
+                <span>info@yuniverse.com</span>
+            </div>
+            <div id="links">
+                <span class="terms">Terms & Conditions</span>
+                <span class="terms">Privacy Policy</span>
+                <span class="terms">Shipping Information</span>
+                <span class="terms">Refund Information</span>
+            </div>
+            <div id="social">
+                <img id="socialIcon" src="./images/facebook.png">
+                <img id="socialIcon" src="./images/twitter.png">
+                <img id="socialIcon" src="./images/instagram.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script>
+        $('#aboutChoice').click(function () {
+            window.location.href = '#container_about';
+        })
+
+        $('#productsChoice').click(function () {
+            window.location.href = '#container_products';
+        })
+
+        $('#contactChoice').click(function () {
+            window.location.href = '#container_contact';
+        }) 
+
+
+
+    </script>
+
+</body>
+
+</html>
